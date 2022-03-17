@@ -4,11 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './login/login.component';
+import { NavegacionComponent } from './navegacion/navegacion.component';
+import { FormulariolComponent } from './formulariol/formulariol.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent
+    InicioComponent,
+    LoginComponent,
+    NavegacionComponent,
+    FormulariolComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
