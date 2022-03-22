@@ -13,6 +13,7 @@ import { ProductoService } from './producto.service';
 import { ProductosComponent } from './productos/productos.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     FormularioComponent,
     ProductosComponent,
     CarritoComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
