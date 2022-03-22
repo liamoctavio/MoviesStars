@@ -1,0 +1,12 @@
+<p>productos works!</p>
+
+
+<ul class="list-group">
+    <li class="list-group-item"  *ngFor="let item of producto, index as i">
+        <h6>Nombre: {{item.nombre}}</h6>
+        <h6>Categoria: {{item.categoria}}</h6>
+        <h6>Descripcion: {{item.descripcion}}</h6>
+        <a [routerLink]="['/carrito',i]">Comprar!</a>
+    </li>
+   
+  </ul>

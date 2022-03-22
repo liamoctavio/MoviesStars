@@ -6,8 +6,13 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
-import { FormulariolComponent } from './formulariol/formulariol.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { ProductoService } from './producto.service';
+import { ProductosComponent } from './productos/productos.component';
+import { CarritoComponent } from './carrito/carrito.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +20,20 @@ import { FormularioComponent } from './formulario/formulario.component';
     InicioComponent,
     LoginComponent,
     NavegacionComponent,
-    FormulariolComponent,
-    FormularioComponent
+    FormularioComponent,
+    ProductosComponent,
+    CarritoComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ProductoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
