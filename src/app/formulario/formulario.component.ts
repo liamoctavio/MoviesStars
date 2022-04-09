@@ -22,6 +22,22 @@ export class FormularioComponent implements OnInit {
 
 //TRabajar con formBuilder
   constructor(private fb: FormBuilder) {
+    // this.personaModel = this.fb.group({
+    //   nombre: [this.usuario.nombre, Validators.required],
+    //   apellido: [this.usuario.apellidos, [Validators.required, Validators.minLength(3),Validators.maxLength(15)]],
+    //   edad: [this.usuario.edad, Validators.required],
+    //   email: [this.usuario.email,[Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$')]],
+    //   direccion: [this.usuario.direccion, [Validators.required, Validators.maxLength(20)]]
+
+    // });
+
+   }
+
+
+  
+
+  ngOnInit(): void {
+
     this.personaModel = this.fb.group({
       nombre: [this.usuario.nombre, Validators.required],
       apellido: [this.usuario.apellidos, [Validators.required, Validators.minLength(3),Validators.maxLength(15)]],
@@ -31,12 +47,7 @@ export class FormularioComponent implements OnInit {
 
     });
 
-   }
 
-
-  
-
-  ngOnInit(): void {
   }
   guardar(){
     console.log(this.personaModel.value)
